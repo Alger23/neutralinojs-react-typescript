@@ -25,8 +25,25 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div id="neutralinoapp">
+      <h1>NeutralinoJs</h1>
+      <div id="info"></div>
+      <br/>
+      <div>
+        <a href="#" onclick="window.myApp.openDocs();">Docs</a> &middot;  
+        <a href="#" onclick="window.myApp.openTutorial();">Tutorial</a>
+      </div>
+    </div>
+    <!-- Neutralino.js client. This file is gitignored, 
+        because `neu update` typically downloads it.
+        Avoid copy-pasting it. 
+        -->
+    <script src="js/neutralino.js"></script>
+    <!-- Your app's source files -->
+    <script src="js/main.js"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
