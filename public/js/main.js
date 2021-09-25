@@ -30,7 +30,9 @@ window.myApp = {
                 {id: "QUIT", text: "Quit"}
             ]
         };
-        Neutralino.os.setTray(tray);
+        if(NL_OS!="Darwin"){
+            Neutralino.os.setTray(tray);
+        }
     },
     onTrayMenuItemClicked: (event) => {
         switch(event.detail.id) {
